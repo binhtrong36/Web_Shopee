@@ -1,0 +1,45 @@
+/* khai bao bien chung */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+}
+
+* {
+    /* kế thừa thẻ chứa nó */
+    box-sizing: inherit;
+}
+
+html {
+    /* set 1 rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+/* set reponsive cho từng thiết bị */
+.grid {
+    width: 1200px;
+    max-width:  100%;
+    margin: 0 auto;
+}
+
+/* truong hop ko dung width tren */
+.grid__full-width {
+    width: 100%;
+}
+
+/* những thẻ nằm trong class này => sẽ nằm cùng trên 1 hàng ngang, và tự xuong dòng */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

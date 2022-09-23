@@ -1,0 +1,117 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#fd6233,#f6422d);
+}
+.header__navbar {
+    display: flex;
+    justify-content:space-between;
+}
+.header__navbar-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 24px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link
+ {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+/* canh giữa chữ với icon */
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link
+ {
+    display: inline-flex;
+    text-align: center;
+ }
+
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover
+ {
+    cursor: pointer;
+    color: rgba(255, 255, 255,0.5);
+ }
+.header__navbar-item--strong {
+    font-weight: 500;
+}
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    height: 16px;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+    text-decoration: none;
+    color:var(--white-color);
+}
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header__navbar-title--no-pointer {
+    color: var(--white-color);
+    cursor: text;
+}
+/* QR code */
+.header_qr {
+    width: 186px;
+background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 118%;
+    padding: 8px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+.header_qr::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    /* background-color: #fd6233; */
+    height: 20px;
+    left: 0;
+    top: -8px;
+    }
+
+.header__navbar-item--has_qr:hover .header_qr {
+    display: block;
+}
+
+.header_qr-img {
+    border-radius: 2px;
+    width: 100%;
+  
+}
+
+
+.header_qr--apps {
+    display: flex;
+    justify-content: space-between;
+}
+.header_qr-download-img {
+    height: 16px;
+}
+.header__qr-link:nth-child(1) {
+    margin-left: 11px;
+}   
+.header__qr-link:nth-child(2) {
+    margin-right: 11px;
+}  
+
