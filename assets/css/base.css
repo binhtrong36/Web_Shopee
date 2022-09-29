@@ -1,8 +1,10 @@
 /* khai bao bien chung */
 :root {
+    --primary-color: rgb(248, 73, 47);
     --white-color: #fff;
     --black-color: #000;
     --text-color:#333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -42,4 +44,60 @@ html {
     to {
         opacity: 1;
     }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+   
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.3);
+  
+}
+
+.modal_body {
+    position:relative;
+    margin: auto;
+    z-index: 1;
+}
+
+/* Button style */
+.btn {
+    height: 34px;
+    min-width: 142px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    color: #ccc;
+    background-color: #999;
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0, 0.1);
+    color: rgba(0,0,0, 0.5);
 }
