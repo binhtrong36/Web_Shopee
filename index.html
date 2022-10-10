@@ -92,8 +92,26 @@
                         <i class="header__navbar-icon fa-regular fa-circle-question"></i>
                         Trợ giúp</a>
                     </li>
-                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/hotgirl2.jpeg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-img-name">Sơn Đặng</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="" class="">Tài khoảng của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="" class="">Đia chỉ của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="" class="">Đơn mua của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="" class="">đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div class="header-with-search">
@@ -145,8 +163,81 @@
                         <i class="header__search-btn-icon fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
+                <!-- Cart layout -->
                 <div class="header__cart">
-                    <i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i>
+                    <div class="header__cart--wrap">
+                        <i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i>
+                        <span class="header__cart--notice">3</span>
+                       <!-- No cart : header__cart-list--no-cart -->
+                        <div class="header__cart-list">
+                            <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                            <span class="header__cart-list-no-cart-msg">
+                            Chưa có sản phẩm
+                            </span>
+                              <!-- Has cart -->
+                            <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/hotgirl1.jpeg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mất</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại hàng : Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">xoá</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/hotgirl1.jpeg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mất</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại hàng : Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">xoá</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/hotgirl1.jpeg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bộ kem đặt trị vùng mất</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại hàng : Bạc
+                                            </span>
+                                            <span class="header__cart-item-remove">xoá</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="btn--primary-view-cart btn btn--primary">Xem giỏ hàng</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
