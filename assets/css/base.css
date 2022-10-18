@@ -6,7 +6,8 @@
     --text-color:#333;
     --border-color: #dbdbdb;
 
-    --header-height: 120px;
+    --header-height: 1
+    20px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -24,6 +25,9 @@ html {
     box-sizing: border-box;
 }
 /* set reponsive cho từng thiết bị */
+
+
+
 .grid {
     width: 1200px;
     max-width:  100%;
@@ -39,6 +43,29 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+
 }
 /* Animation */
 @keyframes fadeIn {
@@ -97,7 +124,7 @@ html {
     cursor: pointer;
     background-color: var(--white-color);
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -117,4 +144,47 @@ html {
 .btn:hover {
     background-color: rgba(0,0,0, 0.1);
     color: rgba(0,0,0, 0.5);
+}
+
+/* selection */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    }
+
+.select-input__link {
+
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
 }
