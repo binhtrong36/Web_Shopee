@@ -5,6 +5,7 @@
     --black-color: #000;
     --text-color:#333;
     --border-color: #dbdbdb;
+    --star-gold-color:#ffce3d;
 
     --header-height: 1
     20px;
@@ -174,6 +175,7 @@ html {
     padding: 8px 16px;
     list-style: none;
     display: none;
+    z-index: 1;
     }
 
 .select-input__link {
@@ -188,3 +190,39 @@ html {
 .select-input__link:hover {
     color: var(--primary-color);
 }
+
+/* pagination */
+.pagination {
+ display: flex;
+ list-style-type : none ; 
+ justify-content: center;
+ align-items: center;
+
+
+}
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:#999;
+   min-width: 40px;
+   height: var(--height);
+   line-height: var(--height);
+   text-align: center;
+}
+
+.pagination-item__link--active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item__link--active:hover {
+
+    background-color: #f48373;
+}
+
